@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  border: 2px solid red;
+}
+
+.fl-nav {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3a3232;
+  flex-direction: column;
+  width: 250px;
+  border: 2px solid purple;
+  position: fixed;
+}
+
+.fl-navlinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.fl-navlinks>a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.fl-logo {
+  margin-top: 20px;
+  width: 225px;
+  height: auto;
+}
+
+.fl-forest {
+  margin: 0;
+  width: 250px;
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.tree {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  width: 250px;
+  height: auto;
+}
+
+#fog {
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  width: 250px;
+  height: 165px;
+  background: linear-gradient(to bottom, #3a3232 30%, lightgrey);
+  z-index: 2;
+  opacity: 55%;
+}
+
+.front {
+  z-index: 100;
+}
+
+.back {
+  z-index: 1;
+}
+
+.fl-main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 250px;
+  border: 2px solid blue;
+}
+
+.fl-heading {
+  padding: 5px;
+  background-color: rgb(139, 186, 240);
+  border-bottom: 4px solid rgb(102, 138, 179);
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+  .fl-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    background-color: #3a3232;
+    position: fixed;
+  }
+
+  .tree {
+    height: 20px;
+    width: auto;
+    opacity: 0;
+  }
+
+  #fog {
+    height: 20px;
+    width: auto;
+    opacity: 0;
+  }
+}
+
+/* .fl-slider {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.fl-slides {
+  display: none;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+  color: #F2F2F2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #F2F2F2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #BBB;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+} */
